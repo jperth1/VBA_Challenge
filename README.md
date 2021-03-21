@@ -26,3 +26,11 @@ Refactoring the VBA scripted caused execution time to decrease. The refactored s
 ![Alt_image title](/Resources/VBA_Challenge_2017.png)
 
 ![Alt_image title](/Resources/VBA_Challenge_2018.png)
+
+## Summary
+
+### Assessment of Refactored Code
+the advantages and disadvantages of refactoring code in general
+
+### Comparing the Original and Refactored Code
+the advantages and disadvantages of the original and refactored VBA script
