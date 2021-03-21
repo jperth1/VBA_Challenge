@@ -25,4 +25,4 @@ Refactoring the VBA scripted caused execution time to decrease. The refactored s
 
 ![Alt_image title](/Resources/VBA_Challenge_2017.png)
 
-![Alt_image title](/Resources/VBA_Challenge_Original_2018.png)
+![Alt_image title](/Resources/VBA_Challenge_2018.png)
