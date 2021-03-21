@@ -1,5 +1,5 @@
 # VBA_Challenge
-Data Analysis of Stocks using VBA
+Data Analysis of stocks using VBA
 ## Project Overview
 The following analysis using VBA to evaluate stock data from 2017 and 2018 and highlight the total daily volume and yearly return for each stock. 
 
