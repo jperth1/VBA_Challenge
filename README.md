@@ -30,7 +30,9 @@ Refactoring the VBA scripted caused execution time to decrease. The refactored s
 ## Summary
 
 ### Assessment of Refactored Code
-the advantages and disadvantages of refactoring code in general
+In general refactoring code has advantages and disadvantages. In terms of advantages, refactoring betters the structure and design of the code, making it simpiler to read, especially when multiple individuals are working on the same script. Refactoring also makes it easier to debug, as the structure is simplier and more readable. Additionally, refactoring can improve the speed at which the code executes because refactoring elimiates any unnecessary or redundent cope.  Overall, refactoring is adventagous because the quality of the code is improved while maintaining the same desired output. 
+
+Refactoring does have disadvantages. Refactoring can be time intensive so if time is of the essence refactoring is not adventagous. Moreover, refactoring may cause new bugs in the program, which will require even more time to fix. Finally, 
 
 ### Comparing the Original and Refactored Code
 the advantages and disadvantages of the original and refactored VBA script
