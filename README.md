@@ -40,10 +40,14 @@ The most significant advantage of the refactored VBA script compared to the orgi
 
 One of the disadvatages of the refactored VBA code is the inclusion of the formatting within the subroutine "Sub AllStocksAnalysis()" In the original VBA code the formatting for the output worksheet has its own subroutine "Sub FormatAllStocksAnalysisTable()". I think its more organzied to have the formatting in its own subroutine because the seperate subroutines perform their sperate tasks, not multiple different tasks within one subroutine. Seperating them in this way will also help debugging if problems arise. 
 
-![Alt_image title](/Resources/VBA_Challenge_Original_Formatting)                        ![Alt_image title](/Resources/VBA_Challenge_Refactored_Formatting)
+![Alt_image title](/Resources/VBA_Challenge_Original_Formatting)                        
+
+![Alt_image title](/Resources/VBA_Challenge_Refactored_Formatting)
 
 
 A disadvantage in both the original and the refactored script is the use of magic numbers. For example, the number 12 used for the elements in the array "tickers" in the origianl VBA script and the arrays "tickers" , "tickerVolumes", "tickerStaringPrice", and "tickerEndingPrice" in the refactored script could be assigned to a variable such as "tickerAmount". 
 
-![Alt_image title](/Resources/VBA_Challenge_Originial_Magic_Number)                     ![Alt_image title](/Resources/VBA_Challenge_Refactored_Magic_Number)
+![Alt_image title](/Resources/VBA_Challenge_Originial_Magic_Number)                     
+
+![Alt_image title](/Resources/VBA_Challenge_Refactored_Magic_Number)
 
