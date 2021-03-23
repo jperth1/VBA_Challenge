@@ -47,7 +47,7 @@ One of the disadvatages of the refactored VBA code is the inclusion of the forma
 
 A disadvantage in both the original and the refactored script is the use of magic numbers. For example, the number 12 used for the elements in the array "tickers" in the origianl VBA script and the arrays "tickers" , "tickerVolumes", "tickerStaringPrice", and "tickerEndingPrice" in the refactored script could be assigned to a variable such as "tickerAmount". 
 
-![Alt_image title](/Resources/VBA_Challenge_Originial_Magic_Number)                     
+![Alt_image title](/Resources/VBA_Challenge_Original_Magic_Number)                     
 
 ![Alt_image title](/Resources/VBA_Challenge_Refactored_Magic_Number)
 
