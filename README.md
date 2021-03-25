@@ -5,7 +5,7 @@ The following analysis using VBA to evaluate stock data from 2017 and 2018 and h
 
 ## Results
 
-### Stock Performace
+### Stock Performance
 In 2017 11 out of the  12 stocks included in this analysis saw a positive yearly return, indicating that these companies saw an increase in their stock price. In 2017, only TERP saw a negative yearly return of -7.2%. 
 
 ![Alt_image title](/Resources/VBA_Challenge_Table_2017.png)
@@ -26,13 +26,14 @@ Refactoring the VBA scripted caused execution time to decrease. The refactored s
 ## Summary
 
 ### Assessment of Refactored Code
-In general refactoring code has advantages and disadvantages. In terms of advantages, refactoring betters the structure and design of the code, making it simpiler to read, especially when multiple individuals are working on the same script. Refactoring also makes it easier to debug, as the structure is simplier and more readable. Additionally, refactoring can improve the speed at which the code executes because refactoring elimiates any unnecessary or redundent cope.  Overall, refactoring is adventagous because the quality of the code is improved while maintaining the same desired output. 
+In general refactoring code has advantages and disadvantages. In terms of advantages, refactoring betters the structure and design of the code and makes it easier to read, especially when multiple individuals are working on the same script. Refactoring also makes it easier to debug, as the structure is simpler and more readable. Additionally, refactoring can improve the speed at which the code executes because refactoring improves the structure and eliminates any unnecessary code.  Overall, refactoring is advantageous because the quality of the code is improved while maintaining the same desired output. 
 
-Refactoring does have disadvantages. Refactoring can be time intensive so if time is of the essence refactoring is not adventagous. Moreover, refactoring may cause new bugs in the program, which will require even more time to fix. Finally, 
+Refactoring does have disadvantages. Refactoring can be time intensive so if time is of the essence refactoring is not advantageous. Moreover, refactoring may cause new bugs in the program, which will require even more time to fix. So if refactoring should be performed when there is plenty of time to review, debug, and test. 
 
 ### Comparing the Original and Refactored Code
 
-The most significant advantage of the refactored VBA script compared to the orginal script is its speed in execution. In the original script the initial for loop "for i = 0 To 11 / ticker= tickers(i)/ totalVolume=0" has to execute each time the nested for loop "for j = 2 To RowCount is completed; the nested for loop has to go through every single row before moving on to the next ticker.  On the other hand, the refactored code uses the fuction "tickerIndex = tickerIndex + 1" within the for loop "for i= 2 to RowCount", causing the ticker to move to the next element in the array immediately after it has reached the final ticker in the row. In this way the original code goes over the 3013 rows 12 times while the refactored code goes over the 3013 rows once. Another advantage of the refactored code is its use of arrays "Ticker", "Total Daily Volume", and "Return". The arrays allow the final outputs to be stored and if later analysis can take place if needed. This is a disadvantage for the origial code as final outputs are not stored and further analysis cannot take place. 
+The most significant advantage of the refactored VBA script compared to the original script is its speed in execution. In the original script the initial for loop "for i = 0 To 11 / ticker= tickers(i)/ totalVolume=0" has to execute each time the nested for loop "for j = 2 To RowCount is completed, so the nested for loop has to go through every single row before moving on to the next i, or ticker.  On the other hand, the refactored code uses the function "tickerIndex = tickerIndex + 1" within the for loop "for i= 2 to RowCount", causing the ticker to move to the next element in the array immediately after it has reached the final ticker in the row. In this way the original code goes over the 3013 rows 12 times while the refactored code goes over the 3013 rows once. Another advantage of the refactored code is its use of arrays: "Tickers", "Total Daily Volume", and "Return". The arrays allow the final outputs to be stored and if later analysis can take place if needed. This is a disadvantage for the original code as final outputs are not stored and further analysis cannot take place.
+
 
 One of the disadvatages of the refactored VBA code is the inclusion of the formatting within the subroutine "Sub AllStocksAnalysis()" In the original VBA code the formatting for the output worksheet has its own subroutine "Sub FormatAllStocksAnalysisTable()". I think its more organzied to have the formatting in its own subroutine because the seperate subroutines perform their sperate tasks, not multiple different tasks within one subroutine. Seperating them in this way will also help debugging if problems arise. 
 
